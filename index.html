@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satkrit Kadriya - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Background Video -->
+    <div class="background-video-container">
+        <video autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/853919/853919-hd_1920_1080_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="index.html">Satkrit Kadriya</a></h1>
+                <ul class="nav-links">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skill.html">My Skills</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h2>Hello, I'm <span class="highlight">Satkrit Kadriya</span></h2>
+                <p id="typed-element">Welcome to my portfolio</p>
+                <a href="https://www.instagram.com/satkrit.77/" target="_blank" class="cta-button">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Satkrit Kadriya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Include Typed.js script for typing animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var typed = new Typed("#typed-element", {
+                strings: ["Let's build something amazing together.", "I'm a developer and a musician.", "Welcome to my portfolio!"],
+                typeSpeed: 50,   // Typing speed in milliseconds
+                backSpeed: 30,   // Backspacing speed in milliseconds
+                loop: true       // Loop the typing animation
+            });
+        });
+    </script>
+</body>
+</html>
